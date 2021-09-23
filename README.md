@@ -13,3 +13,8 @@ java.sql.Connection connection = DriverManager.getConnection("jdbc:subprotocol:/
 ## Credentials
 If you are going to share a project on GitHub like i did, make sure to hide your MySQL credentials by setting up 
 at least 2 environment variables: 1 for the username and 1 for the password.
+You can use your credentials with the System library:
+
+```java
+String yourEnvironmentVariable = System.getenv("yourVariableName");
+```
